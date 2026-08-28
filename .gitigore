@@ -1,0 +1,13 @@
+#IDEs JetBrains
+.idea/
+*.iml
+
+#---VS Code-
+.vscode/
+
+#---Sistema operacional---
+.DS--Store Thumbs.db
+
+#---Dependêcias / build (úteis quando o projeto crescer) ---
+node_modules/
+dist/
