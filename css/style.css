@@ -39,23 +39,6 @@ ul { list-style: nome; margin: 0; padding: 0;}
 a { color: var(--roxo);text-decoration: nome; }
 a:hover {color:var(--azul);}
 
-/*3. componete de botão(.btn)*/
-.btn {
-    display:inline-block;
-
-font-weight: 500;
-font-size: 16px;
-padding: 15px 20px;
-border-radius: 12px;
-transition: background .15, border-color .15s;}
-
-.btn--sm {font-size: 15px; padding: 10px 20px; border-radius: 10px;}
-.btn--block {display:block; text-align: center; padding: 13px 20px; font-weight: 600; margin-top: 28px; }
-.btn--primary{background-color: var(--roxo); color: var(--branco); box-shadow: 0 10px 25px rgba(108, 92, 231, .28);}
-.btn--primary:hover{background-color: var(#5b4bd6); color: var(--branco);}
-.btn--sm.btn--primary{box-shadow: none;}
-.btn--ghost{background-color: var(--branco); color:var(--escuro); border: 1px solid var(--borda);}
-.btn--ghost:hover{border-color: var(--borda ); color: var(--escuro);}
 
 /* 5. Helpers de layout */
 .container {
@@ -82,6 +65,25 @@ transition: background .15, border-color .15s;}
 
 .lead--narrow { max-width: 32em; }
 
+
+
+/*3. componete de botão(.btn)*/
+.btn {
+    display:inline-block;
+font-weight: 500;
+font-size: 16px;
+padding: 15px 20px;
+border-radius: 12px;
+transition: background .15, border-color .15s;}
+
+.btn--sm {font-size: 15px; padding: 10px 20px; border-radius: 10px;}
+.btn--block {display:block; text-align: center; padding: 13px 20px; font-weight: 600; margin-top: 28px; }
+.btn--primary{background-color: var(--roxo); color: var(--branco); box-shadow: 0 10px 25px rgba(108, 92, 231, .28);}
+.btn--primary:hover{background-color: var(#5b4bd6); color: var(--branco);}
+.btn--sm.btn--primary{box-shadow: none;}
+.btn--ghost{background-color: var(--branco); color:var(--escuro); border: 1px solid var(--borda);}
+.btn--ghost:hover{border-color: var(--borda ); color: var(--escuro);}
+
 .header {
     position: sticky; top: 0; z-index:10;
     background-color: rgba(255, 255, 255, 0,88);
@@ -92,7 +94,9 @@ transition: background .15, border-color .15s;}
 
 .header_inner {
     display: flex; align-items: center; justify-content:  space-between;
-    gap: 24px; flex-wrap: wrap; padding-top: 18px; padding-bottom: 18px;
+    gap: 24px; 
+    flex-wrap: wrap;
+     padding-top: 18px; padding-bottom: 18px;
 }
 
 .logo img { display: block; height: 44px; width: auto;}
@@ -112,7 +116,7 @@ transition: background .15, border-color .15s;}
 .btn--block {display: block; text-align: center; padding: 13px 20px; 
 font-size: 15px; margin-top: 28px;}
 .btn--primary:hover {background-color: #5b4bd6; color: var(--branco);}
-.btn--primary {background-color: var(--roxo) color:var(--branco); box-shadow: 0 10px 24px rgba(108, 92, 231, .28);}
+.btn--primary {background-color: var(--roxo); color: var(--branco); box-shadow: 0 10px 24px rgba(108, 92, 231, .28);}
 .btn--sm.btn--primary{box-shadow: nome;}
 .btn--ghost {background-color: var(--branco); columns: var(--escuro); border: 1.5px solid var(--borda);}
 .btn--ghost:hover {border: var(--azul); color:var(var(--escuro));}
@@ -120,8 +124,12 @@ font-size: 15px; margin-top: 28px;}
 .PILL {
     display: inline-block; font-size: 13px;font-weight: 600;
     letter-spacing: .04em; text-transform: uppercase;
-    color: var(--roxo) background; va(--cinza);
+    color: var(--roxo) background; var(--cinza);
     padding: 7px 14px; border-radius: 999px;
 }
+
+.PILL--sm {font-size: 12px; text-transform: none;letter-spacing: 0;
+padding: 5px 12px;}
+
 
 
