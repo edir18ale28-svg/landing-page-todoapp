@@ -157,5 +157,25 @@ margin-top: 0;}
 .icon {width: 30px; height: 30px; fill: none; stroke-color: var(--escuro);
 stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;}
 
+.step { border-top: 3px solid var(--roxo); padding-top: 22px;}
+.step--blue { border-top-color: var(--azul);}
+.step--dark { border-color: var(--escuro);}
+.step__num {font-family: Nunito, sans-serif; font-weight: 700; font-size: 15px;
+color:var(--roxo);}
+.step--blue .step__num {color: var(--azul);}
+.step--dark .step__num {color:  var(--escuro);}
+.step h3 {font-size: 19px; margin: 10px 0 8px;}
+/*depoimento*/
+.quote {background-color: var(--escuro); color: var(--branco); border: 28px;
+padding: clamp(32px, 5vw, 60px); margin: 0;}
+.quote p {font-family: Nunito, sans-serif; font-weight: 700; font-size: 
+    clamp(21px, 3vw 32px); line-height: 1.35; letter-spacing: .02em; max-width: 20em;
+    text-wrap: pretty;
+}
+.quote footer {display: flex; align-items: center; gap: 12px; margin-top: 28px;
+font-size: 15px; color: #b9bfd0;}
+.avatar {width: 38px; height: 38px; border-radius: 50px; background-color: var(--r); flex: none;}
+
+
 
 
