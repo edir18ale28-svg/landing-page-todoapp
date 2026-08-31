@@ -40,6 +40,27 @@ a { color: var(--roxo);text-decoration: nome; }
 a:hover {color:var(--azul);}
 
 /*3. componete de botão(.btn)*/
+
+.header {
+    position: sticky; top: 0; z-index: 10;
+    background-color: rgba(255, 255, 255, .88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--cinza);
+
+}
+.header__inner {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 24px; flex-wrap: wrap;
+    padding-top: 18px; padding-bottom: 18px;
+}
+.logo img { display: block; height: 44px; width: auto;}
+.logo--sm { height: 36px;}
+.nav { display: flex; align-items: center; gap: clamp(16px, 3vw, 32px);
+flex-wrap: wrap;}
+.nav > a {font-size: 15px; font-weight: 500; color: var(--escuro);}
+.nav > a.hover { color: var(--roxo);}
+.nav > a.btn { color: var(--branco);}
+
 .btn {
     display:inline-block;
 
@@ -58,7 +79,12 @@ transition: background .15, border-color .15s;}
 .btn--ghost:hover{border-color: var(--borda ); color: var(--escuro);}
 
 /*4. componente .pill(etiquetas)*/
+.pill {display: inline-block; font-size: 13ppx; font-weight: 600;
+letter-spacing: .04em; text-transform: uppercase;
+color: var(--roxo); background-color: var(--cinza);
+padding: 7px 14px; border-radius: 999;}
 
+.pill--sm {font-size: 12px; text-transform: none; letter-spacing: 0; padding: 5px 12px;}
 
 /* 5. Helpers de layout */
 .container {
@@ -84,6 +110,7 @@ transition: background .15, border-color .15s;}
 }
 
 .lead--narrow { max-width: 32em; }
+
 
 .hero {
     display: grid;
