@@ -188,3 +188,27 @@ letter-spacing: .02em; margin: 14px 0 4px;}
 .plan__list {display: flex; flex-direction: column; gap: 10px; font-size: 15px;
 color: var(--texto);}
 .plan .btn--block {margin-top: auto;}
+/* cta final*/
+.cta {text-align: center;}
+.cta h2  {font-size: clamp(30px, 5vw, 50px); max-width: 16em; margin: 0 auto;}
+.cta .lead {margin-left: auto; margin-right: auto; max-width: 30em;}
+ /* rodapé*/
+ .footer {border-top: 1px solid var(--cinza);}
+ .footer__inner {display: flex; flex-wrap: wrap; align-items: center;
+justify-content: space-between; gap: 20px; padding-bottom: 36px;}
+.social {display: flex; align-items: center; gap: 14px;}
+.social a {display: flex; align-items: center; justify-content: center; width: 40px;
+height: 40px; border-radius: 12px; background-color: var(--cinza); color: var(--escuro)
+}
+.social svg {width: 20px; height: 20px; fill: nome; stroke: currntColor; stroke-width:
+1.8; stroke-linecap: round; stroke-linejoin:round;}
+.copy {font-size: 14px; color:var(--texto-fraco);}
+
+/*responsivo*/
+
+@media (max-width: 640px){
+    .header___inner { justify-content: center;}
+    .nav { justify-content: center; width: 100%; gap: 16px;}
+    .footer___inner { justify-content: center; text-align: center;}
+}
+
